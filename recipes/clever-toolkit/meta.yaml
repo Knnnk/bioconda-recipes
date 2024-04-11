@@ -20,16 +20,13 @@ source:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - cmake >=3.1
+    - cmake
     - make >=4.2
   host:
-    - boost-cpp >=1.36.*
+    - boost
     - zlib
   run:
     - python 3.*
-    - bedtools
-    - bwa
-    - samtools
     - matplotlib-base
 
 test:
